@@ -24,12 +24,34 @@ p{
 }
 
 nav{
-  height: 3em;
+  height: 3.5em;
   font-weight: lighter;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, .3);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, .1);
   position: relative; 
   width: 100%;
   background-color: white;
+}
+
+nav h1 a{
+text-decoration: none;
+color: var(--azul-mais-claro);
+}
+
+nav h1{
+  position: absolute;
+  left: 1em;
+  top: 20%;
+  font-size:1.7em ;
+  color: var(--azul-mais-claro);
+}
+
+nav span{
+  color: var(--azul-escuro);
+}
+
+
+nav h1:hover{
+  cursor: pointer;
 }
 
 nav ul{
@@ -40,7 +62,7 @@ nav ul{
 
 nav li{
   padding:10px 40px;
-  font-size: 1.3em;
+  font-size: 1.5em;
   color: var(--azul-mais-claro);
   transition: .2s;
 }
@@ -62,7 +84,7 @@ header img{
   width: 100%;
 }
 
-h2{
+h2#conheca{
   text-align: center;
   margin-top: 1.5em;
   font-size: 4em;
@@ -74,18 +96,18 @@ section #p-conheca{
   width:600px;
   margin: auto;
   margin-top: 20px;
-
+  line-height: 2em;
 }
 
 #circulos{
   padding: 10px;
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(243, 243, 243);
   width: 100em;
   height: 20em;
   margin: auto;
   margin-top: 2em;
   border-radius: 5px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
   border: 1px solid rgb(224, 224, 224);
 }
 
@@ -125,6 +147,54 @@ section #p-conheca{
   color: #699ec7;
 }
 
+#img-lado{
+  display: flex;
+  justify-content: center;
+  padding-top: 5em;
+}
+
+#img-lado img{
+  border-radius: 30px;
+}
+
+#img-lado p{
+  width: 450px;
+  text-align: center;
+  line-height: 2em;
+}
+
+#img-lado button{
+  padding: 10px;
+  margin-top: 3em;
+  width: 200px;
+  height: 50px;
+  font-size: 1em;
+  cursor: pointer;
+  border: 2px solid var(--azul-mais-claro);
+  color: #66abdf;
+  background: transparent;
+  border-radius: 40px;
+  transition: .2s;
+}
+
+#img-lado button:hover{
+  background-color:var(--azul-mais-claro);
+  color: white;
+}
+
+#texto{
+  margin-top: 5em;
+  margin-left: 5em;
+ text-align: center;
+}
+
+#texto h2{
+  margin-bottom: 1em;
+  font-size: 3.3em;
+  color: var(--azul-base);
+  border-bottom: 1px solid grey;
+  padding-bottom: .5em;
+}
 
 footer{
   background:linear-gradient(to top, var(--azul-escuro), var(--azul-meio-escuro)) ;
