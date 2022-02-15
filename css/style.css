@@ -6,8 +6,21 @@
   box-sizing: border-box;
 }
 
+:root{
+  --azul-muito-escuro:#0C2B42;
+  --azul-escuro:#175482;
+  --azul-meio-escuro:#1E6CA8;
+  --azul-base:#247FC3;
+  --azul-mais-claro:#2585CF;
+}
+
 body{
   font-family: 'Roboto', sans-serif;
+}
+
+p{
+  line-height: 1.7em;
+  font-size: 1.2em;
 }
 
 nav{
@@ -28,7 +41,7 @@ nav ul{
 nav li{
   padding:10px 40px;
   font-size: 1.3em;
-  color: rgb(0, 140, 255);
+  color: var(--azul-mais-claro);
   transition: .2s;
 }
 
@@ -38,7 +51,6 @@ nav li:hover{
 }
 
 header{
-  background-repeat: no-repeat;
   background-size: 100%;
 }
 
@@ -54,7 +66,15 @@ h2{
   text-align: center;
   margin-top: 1.5em;
   font-size: 4em;
-  color: rgb(21, 102, 179);
+  color: var(--azul-base);
+}
+
+section #p-conheca{
+  text-align: center;
+  width:600px;
+  margin: auto;
+  margin-top: 20px;
+
 }
 
 #circulos{
@@ -64,9 +84,9 @@ h2{
   height: 20em;
   margin: auto;
   margin-top: 2em;
-  border-radius: 20px;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgb(224, 224, 224);
 }
 
 #circulos ul{
@@ -96,14 +116,20 @@ h2{
  font-size: 1.3em;
  color: rgb(63, 139, 190);
  font-weight: normal;
+ cursor: pointer;
+ transition: .2s;
+}
+
+#circulos .divisoria p:hover{
+  text-decoration: underline;
+  color: #699ec7;
 }
 
 
 footer{
-  text-align: center;
-  background-color: rgb(108, 180, 228);
+  background:linear-gradient(to top, var(--azul-escuro), var(--azul-meio-escuro)) ;
   margin-top: 5em;
-  height: 25vh;
+  height: 50vh;
   font-size: 1.2em;
   color: white;
   font-weight: lighter;
@@ -120,7 +146,30 @@ footer a:hover{
 
 footer #margin{
   padding-top: 5em;
+  padding: 20px;
 }
 
+footer #pe{
+  width: 300px;
+  text-align: justify;
+  padding: 20px;
+}
 
+footer #margem{
+  width: 80%;
+  margin: auto;
+  padding-top: 60px;
+}
+
+footer #lado{
+  display: flex;
+}
+
+footer .espaco{
+  padding: 10px;
+}
+
+footer a{
+  padding-left: 5px;
+}
 
